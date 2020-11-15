@@ -6,7 +6,7 @@ function Classes() {
         <div>
             <p>Aku suka ikan</p>
         </div>
-    )
+    );
 }
 
 export default Classes
