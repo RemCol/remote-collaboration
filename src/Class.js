@@ -1,73 +1,53 @@
-import React from 'react'
+import React from 'react';
+import "./Class.css";
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
-function className() {
+const useStyles = makeStyles({
+  root: {
+    maxWidth: 345,
+  },
+  media: {
+    height: 140,
+  },
+});
+
+export default function Class({ id, subject, teacher, bg, pp }) {
+  const classes = useStyles();
+
   return (
-    <div className="container">
-      <h2>Class List</h2>
-      <div className="row">
-
-
-        <div className="col-md-3">
-          <div className="classNameroom-top">
-            <img src="images/className2.jpg">
-            <div className ="overlay">
-              <button type="button" className="btn btn-secondary" title="Enter className Stream"><i className="fa fa-book" ></i></button>
-              <button type="button" className="btn btn-secondary" title="Button"><i className="fa fa-book" ></i></button>
-              <button type="button" className="btn btn-secondary" title="Button"><i className="fa fa-book" ></i></button>              
-            </div>
-            <h3>Math Class</h3>
-            <h5>Mr.Greg</h5>
-          </div>
-        </div>
-
-
-        <div className="col-md-3">
-          <div className="classNameroom-top">
-            <img src="images/className2.jpg">
-            <div className="overlay">
-              <button type="button" className="btn btn-secondary" title="Enter className Stream"><i className="fa fa-book" ></i></button>
-              <button type="button" className="btn btn-secondary" title="Button"><i className="fa fa-book" ></i></button>
-              <button type="button" className="btn btn-secondary" title="Button"><i className="fa fa-book" ></i></button>              
-            </div>
-            <h3>English className</h3>
-            <h5>Ms.Greg</h5>
-          </div>
-
-        </div>
-
-        <div className="col-md-3">
-          <div className="classNameroom-top">
-            <img src="images/className2.jpg">
-            <div className="overlay">
-              <button type="button" className="btn btn-secondary" title="Enter className Stream"><i className="fa fa-book" ></i></button>
-              <button type="button" className="btn btn-secondary" title="Button"><i className="fa fa-book" ></i></button>
-              <button type="button" className="btn btn-secondary" title="Button"><i className="fa fa-book" ></i></button>              
-            </div>
-            <h3>Science className</h3>
-            <h5>Mr.Victor</h5>
-          </div>
-
-        </div>
-
-        <div className="col-md-3">
-          <div className="classNameroom-top">
-            <img src="images/className2.jpg">
-            <div className="overlay">
-              <button type="button" className="btn btn-secondary" title="Enter className Stream"><i className="fa fa-book" ></i></button>
-              <button type="button" className="btn btn-secondary" title="Button"><i className="fa fa-book" ></i></button>
-              <button type="button" className="btn btn-secondary" title="Button"><i className="fa fa-book" ></i></button>              
-            </div>
-            <h3>Geography className</h3>
-            <h5>Mr.Chris</h5>
-          </div>
-        </div>
-
-
-
-
-      </div>
-    </div>
-  )
+    <Card className={classes.root} className="class">
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image={bg}
+          title= {subject}
+        >
+        <img className="pp" src={pp}/>
+        </CardMedia>
+        <CardContent className="class__content">
+          <Typography gutterBottom variant="h4" component="h2">
+            {subject}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {teacher}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+        <Button size="small" color="primary">
+          Learn More
+        </Button>
+      </CardActions>
+    </Card>
+  );
 }
-
-export default className

@@ -5,6 +5,7 @@
     top: 0;
     z-index: 100;
     border-bottom: 1px solid #345da7;
+    background-color: #fff;
 }
 
 .header__link:visited, 
