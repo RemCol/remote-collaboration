@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #345da7;
+}
+
+.header__link:visited, 
+.header__link:active, 
+.header__link:hover,
+.header__link {
+    text-decoration: none;
+}
+
+.header__logo {
+    color: #345da7;
+    object-fit: contain;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 5px 20px;
+    text-decoration: none;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 4%;
+    font-weight: bold;
+}
+
+.header__option {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.header__optionLine {
+    font-size: 18px;
+}
