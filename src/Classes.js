@@ -7,6 +7,7 @@ function Classes() {
         <div className="classes">
             {/*Classes details*/}
             <div className="classes__row">
+            <div className="class_detail">
             <Class
                 id="/mrgreg"
                 subject="Mathematics"
@@ -14,6 +15,8 @@ function Classes() {
                 bg="https://www.toronto.ca/wp-content/uploads/2019/04/910c-city-planning-exhibition-place-cultural-heritage-landscape-assessment--500x329.jpg"
                 pp="https://images-na.ssl-images-amazon.com/images/I/51zLZbEVSTL._AC_SY355_.jpg"
             />
+            </div>
+
             <Class
                 id="/mrvictor"
                 subject="Physics"
