@@ -16,7 +16,7 @@
   font-weight: bold ;
   text-align: center;
   padding:15px;
-  background-color: burlywood;
+  background-color:rgb(122, 122, 255);
   box-shadow: 2px 2px 10px black;
   font-family: serif
 }
@@ -30,14 +30,14 @@
 }
 .class-stream h2
 {
-  background : rgb(61, 23, 23);
+  background : rgb(1, 1, 48);
   opacity: 0.8;
-  color: burlywood;
+  color: rgb(177, 177, 255);
   font-weight: bold;
   font-family: serif;
-  width: 100%;
-  font-size : 24 px;
-  padding : 3px ;
+  width: 80%;
+  font-size : 40 px;
+  padding : 20px ;
   height: 40px;
 
 }
@@ -72,7 +72,8 @@
   color: grey;
   height: 35px;
   width: 35px;
-  font-size: 20px;
+  font-size: 15px;
+  font-style: normal;
   padding : 7px;
   margin: 5%;
   margin-top:200%;

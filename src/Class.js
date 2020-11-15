@@ -8,6 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { BrowserRouter as Router, Switch, Route, NavLink} from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
@@ -46,6 +47,9 @@ export default function Class({ id, subject, teacher, bg, pp }) {
         </Button>
         <Button size="small" color="primary">
           Learn More
+        </Button>
+        <Button size="small" color="primary">
+          <NavLink exact activeClassName="active" to="/classStream1">View ClasS Stream</NavLink>
         </Button>
       </CardActions>
     </Card>
