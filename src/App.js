@@ -1,7 +1,7 @@
 import React, {} from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import Header from './Header'
+import Header from './Header';
 import Classes from './Classes';
 import classStream from './classStream1';
 
