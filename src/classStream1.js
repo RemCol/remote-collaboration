@@ -7,7 +7,7 @@ const classStream = () => {
     <div>
       <Header></Header>
       <div class="class-stream">
-        <h2>Mathema tics Class Stream</h2>
+        <h2>Mathematics Class Stream</h2>
         <div class="row">
           <div class="col-md-3">
 
