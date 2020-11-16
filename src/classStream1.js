@@ -104,13 +104,14 @@ const classStream = () => {
       <a href="http://localhost:3001">
         <Fab
           variant="extended"
-          size="medium"
+          size="large"
           color="primary"
           aria-label="add"
           style={{position: "fixed", bottom: 10, right: 10}}
         >
           <AddIcon /> Open Whiteboard
         </Fab>
+      </a>
     </div>
   );
 }
