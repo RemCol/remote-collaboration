@@ -25,8 +25,7 @@
     "eject": "react-scripts eject",
     "stopall": "forever stopall",
     "server": "forever start Whiteboard/app.js",
-    "config": "export GOOGLE_APPLICATION_CREDENTIALS=creds.json",
-    "app": "npm run config && npm run server && npm run start"
+    "app": "npm run server && npm run start"
   },
   "eslintConfig": {
     "extends": [
