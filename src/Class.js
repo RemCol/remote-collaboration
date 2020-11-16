@@ -44,13 +44,7 @@ export default function Class({ id, subject, teacher, bg, pp }) {
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-        <Button size="small" color="primary">
-          <NavLink exact activeClassName="active" to="/classStream1">View ClasS Stream</NavLink>
+          <NavLink exact activeClassName="active" to="/classStream1" className="class__streamLink">View Class Stream</NavLink>
         </Button>
       </CardActions>
     </Card>
