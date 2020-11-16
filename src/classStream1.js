@@ -1,4 +1,6 @@
 import React from "react";
+import Fab from '@material-ui/core/Fab'
+import AddIcon from '@material-ui/icons/Add';
 import "./classStream1.css";
 import Header from "./Header";
 
@@ -99,6 +101,17 @@ const classStream = () => {
           </div>
         </div>
       </div>
+      <a href="http://localhost:3001">
+        <Fab
+          variant="extended"
+          size="large"
+          color="primary"
+          aria-label="add"
+          style={{position: "fixed", bottom: 10, right: 10}}
+        >
+          <AddIcon /> Open Whiteboard
+        </Fab>
+      </a>
     </div>
   );
 }

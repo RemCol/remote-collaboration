@@ -1,4 +1,19 @@
 extends layout
 block content
-	canvas( id="draw", resize="true", keepalive="true" style="height:100%;width:100%;")
+	canvas( id="draw", resize="true", keepalive="true" style="height:100vh;width:50%;")
+	button( id="convert" onclick="convert()" style="position:fixed;top: 10px;left: 10px") Convert to text
+	div(class="container" style='height:100%;position:fixed;top: 0px;left: 60%')
+		br()
+		div( class="jumbotron")
+			h1( class="display-4") Chat
+			br()
+			input( id = "name" class="form-control" placeholder="Name")
+			br()
+			textarea( id = "message" class="form-control" placeholder="Your Message Here")
+			br()
+			button( id="send" class="btn btn-success") Send
+			br()
+			br()
+		div( id="messages") History
+
 	script( type="text/paperscript", src="javascripts/draw.js", canvas="draw")
