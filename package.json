@@ -7,17 +7,23 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.1.2",
     "@testing-library/user-event": "^12.2.2",
+    "express": "3.0.x",
+    "jade": "^1.11.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
+    "socket.io": "0.9.x",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "stopall": "forever stopall",
+    "server": "forever start Whiteboard/app.js",
+    "app": "npm run server && npm run start"
   },
   "eslintConfig": {
     "extends": [
@@ -36,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "forever": "^3.0.2"
   }
 }
