@@ -1,4 +1,5 @@
 extends layout
 block content
-	canvas( id="draw", resize="true", keepalive="true" style="height:100%;width:100%;")
+	canvas( id="draw", resize="true", keepalive="true" style="height:100%;width:50%;")
+	button( id="convert" onclick="convert()") Convert to text
 	script( type="text/paperscript", src="javascripts/draw.js", canvas="draw")

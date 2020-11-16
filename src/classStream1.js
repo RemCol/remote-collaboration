@@ -1,4 +1,6 @@
 import React from "react";
+import Fab from '@material-ui/core/Fab'
+import AddIcon from '@material-ui/icons/Add';
 import "./classStream1.css";
 
 const classStream = () => { 
@@ -95,6 +97,18 @@ const classStream = () => {
 
         </div>
         </div>
+        <a href="http://localhost:3001">
+        <Fab
+          variant="extended"
+          size="medium"
+          color="primary"
+          aria-label="add"
+          style={{position: "fixed", bottom: 10, right: 10}}
+        >
+          <AddIcon /> Open Whiteboard
+        </Fab>
+        {/* <button style={{position: "absolute", bottom: 0, right: 0}}>Open Whiteboard</button> */}
+        </a>
         </div>
 
   );

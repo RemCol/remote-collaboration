@@ -57,7 +57,7 @@ function onMouseUp(event) {
 }
 
 
-
+// console.log(translate)
 
 
 // -----------------
@@ -93,12 +93,25 @@ function endPath( x,y) {
   paths[mysessionId].add(new paper.Point(x, y));
   console.log(allGroup.exportSVG().outerHTML);
   var canvas = document.getElementById("draw");
-  var img    = canvas.toDataURL("image/png");
+  var img    = canvas.toDataURL("image/jpeg").slice(23);
   console.log(img);
+  // emit("translate", {img: img});
   view.draw();
 }
 
+io.on( 'translated', function( data ) {
+  
+  alert(data.data)
+  
+})
+function convert() {
+  var canvas = document.getElementById("draw");
+  var img = canvas.toDataURL("image/jpeg").slice(23);
+  console.log(img);
 
+  emit("translate", {img: img});
+
+}
 
 
 // -----------------
